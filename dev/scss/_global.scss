@@ -4,13 +4,12 @@
 
 *{
     font-family: 'Work Sans', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    transition: .3s ease-in-out all;
-}
-
-.container{
-    max-width: 1366px;
+    list-style: none!important;
+    text-decoration: none!important;
+    transition: 0.3s ease-in-out all;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .section{

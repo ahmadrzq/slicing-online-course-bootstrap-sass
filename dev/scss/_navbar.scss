@@ -1,0 +1,19 @@
+.navbar {
+  padding: 20px 0;
+  .nav-item {
+    margin-right: 10px;
+    .nav-link {
+      font-weight: map-get($font-weights, medium);
+      color: $dark-color;
+      &.active {
+        color: $button-color;
+      }
+    }
+  }
+  .navbar-auth {
+    .btn-menu {
+      font-weight: map-get($font-weights, medium);
+      color: $dark-color;
+    }
+  }
+}
