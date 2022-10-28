@@ -1,5 +1,11 @@
 .navbar {
   padding: 20px 0;
+  .logo{
+    a{
+      font-weight: map-get($font-weights, bold);
+      font-size: 25px;
+    }
+  }
   .nav-item {
     margin-right: 10px;
     .nav-link {
