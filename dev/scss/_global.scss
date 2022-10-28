@@ -1,0 +1,36 @@
+@import "colors";
+@import "fonts";
+@import "button";
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s ease-in-out all;
+}
+
+.container{
+    max-width: 1366px;
+}
+
+.section{
+    margin-top: 180px;
+}
+
+.label-section{
+    font-weight: map-get($font-weights, medium);
+    font-size: 25px;
+    color: $dark-color;
+}
+
+.heading-section{
+    font-weight: map-get($font-weights, medium);
+    font-size: 40px;
+    color: $dark-color;
+}
+
+.sub-heading-section{
+    font-weight: map-get($font-weights, light);
+    font-size: 18px;
+    color: $dark-color;
+}
