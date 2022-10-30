@@ -1,37 +1,40 @@
 @import "colors";
 @import "fonts";
 
-.btn-master{
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-weight: map-get($font-weights, medium);
+.btn-master {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: map-get($font-weights, medium);
 
-    @include media-breakpoint-down(lg){
-        padding: 15px 100px;
-    }
-    @include media-breakpoint-down(sm){
-        padding: 10px 20px;
-    }
+  @include media-breakpoint-down(lg) {
+    padding: 15px 100px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 10px 20px;
+  }
 }
 
-.btn-first{
-    @extend .btn-master;
-    background-color: $button-color;
-    color: white;
-    &:hover{
-        background-color: white;
-        color: $button-color;
-        border: 1px solid $button-color;
-    }
-}
-
-.btn-second{
-    @extend .btn-master;
-    background-color: white;
+.btn-first {
+  @extend .btn-master;
+  background-color: $button-color;
+  border: 1px solid $button-color;
+  color: white;
+  &:hover {
+    background-color: $second-color;
     color: $button-color;
     border: 1px solid $button-color;
-    &:hover{
-        background-color: $button-color;
-        color: white;
-    }
+  }
+}
+
+.btn-second {
+  @extend .btn-master;
+  background-color: $second-color;
+  color: $button-color;
+  font-weight: map-get($font-weights, semiBold);
+  border: 1px solid $button-color;
+  &:hover {
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    color: white;
+  }
 }
