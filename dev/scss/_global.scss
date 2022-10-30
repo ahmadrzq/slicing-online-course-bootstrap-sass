@@ -20,7 +20,7 @@
 .label-section {
   font-weight: map-get($font-weights, medium);
   font-size: 25px;
-  color: $dark-color;
+  color: $button-color
 }
 
 .heading-section {
@@ -76,6 +76,36 @@
     @include media-breakpoint-between(md,lg){
         max-width: 400;
         max-height: 600;
+    }
+  }
+}
+
+// Category CSS
+.category{
+  i{
+    font-size: 35px;
+    color: $button-color;
+  }
+  .trans{
+    transition: none;
+  }
+  .card{
+    border: 2px solid $button-color;
+    color: $button-color;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.1);
+      background-color: $button-color;
+      color: $second-color;
+    }
+    .detail{
+      .title{
+        font-size: 20px;
+      }
+      .total{
+        font-size: 15px;
+      }
     }
   }
 }
