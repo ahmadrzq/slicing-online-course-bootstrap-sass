@@ -1,73 +1,81 @@
+@import "mixins/breakpoints";
 @import "colors";
 @import "fonts";
 @import "button";
 
-*{
-    font-family: 'Work Sans', sans-serif;
-    list-style: none!important;
-    text-decoration: none!important;
-    transition: 0.3s ease-in-out all;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  font-family: "Work Sans", sans-serif;
+  list-style: none !important;
+  text-decoration: none !important;
+  transition: 0.3s ease-in-out all;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.section{
-    margin-top: 180px;
+.section {
+  margin-top: 180px;
 }
 
-.label-section{
-    font-weight: map-get($font-weights, medium);
-    font-size: 25px;
-    color: $dark-color;
+.label-section {
+  font-weight: map-get($font-weights, medium);
+  font-size: 25px;
+  color: $dark-color;
 }
 
-.heading-section{
-    font-weight: map-get($font-weights, medium);
-    font-size: 40px;
-    color: $dark-color;
+.heading-section {
+  font-weight: map-get($font-weights, medium);
+  font-size: 40px;
+  color: $dark-color;
 }
 
-.sub-heading-section{
-    font-weight: map-get($font-weights, light);
-    font-size: 18px;
-    color: $dark-color;
+.sub-heading-section {
+  font-weight: map-get($font-weights, light);
+  font-size: 18px;
+  color: $dark-color;
 }
 
 // Home CSS
-.home{
-    background-color: $second-color;
-    padding-top: 150px;
-    height: 100vh;
-    .title{
-        font-weight: map-get($font-weights, bold);
-        font-size: 40px;
-        color: $dark-color;
-        .v1{
-            color: $first-color;
-        }
-        .v2{
-            color: $first-color;
-        }
-        @include media-breakpoint-beetwen(md,lg){
-            font-size: 35px !important;
-        }
-        @include media-breakpoint-down(sm){
-            font-size: 25px !important;
-        }
+#home {
+  background-color: $second-color;
+  padding-top: 150px;
+  height: 100vh;
+  .title {
+    font-weight: map-get($font-weights, bold);
+    font-size: 40px;
+    color: $dark-color;
+    .v1 {
+      color: $first-color;
     }
-    .sub-title{
-        font-weight: map-get($font-weights, light);
-        font-size: 20px;
-        color: $dark-color;
-        @include media-breakpoint-down(sm){
-            font-size: 16px;
-        }
+    .v2 {
+      color: $first-color;
     }
-    .btn-home{
-        margin-top: 80px;
-        @include media-breakpoint-down(sm){
-            margin-top: 60px;
-        }
+
+    @include media-breakpoint-between(md,lg){
+        font-size: 35px !important;
     }
+    @include media-breakpoint-down(sm){
+        font-size: 25px !important;
+    }
+  }
+  .sub-title {
+    font-weight: map-get($font-weights, light);
+    font-size: 20px;
+    color: $dark-color;
+    @include media-breakpoint-down(sm){
+        font-size: 16px;
+    }
+  }
+  .btn-home {
+    margin-top: 80px;
+    @include media-breakpoint-down(lg){
+        margin-top: 40px;
+    }
+  }
+  .img-home{
+    @include media-breakpoint-between(md,lg){
+        max-width: 400;
+        max-height: 600;
+    }
+  }
 }

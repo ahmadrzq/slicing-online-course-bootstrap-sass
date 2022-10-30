@@ -6,6 +6,9 @@
     border-radius: 50px;
     font-weight: map-get($font-weights, medium);
 
+    @include media-breakpoint-down(lg){
+        padding: 15px 100px;
+    }
     @include media-breakpoint-down(sm){
         padding: 10px 20px;
     }
