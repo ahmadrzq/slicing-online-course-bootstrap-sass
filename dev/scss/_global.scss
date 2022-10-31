@@ -15,7 +15,7 @@
 
 .section {
   margin-top: 120px;
-  @include media-breakpoint-between(sm,lg) {
+  @include media-breakpoint-between(sm, lg) {
     margin-top: 60px;
   }
 }
@@ -87,7 +87,7 @@
     .img-img {
       max-width: 100%;
       height: auto;
-      @include media-breakpoint-between(sm,md) {
+      @include media-breakpoint-between(sm, md) {
         max-width: 70%;
       }
     }
@@ -135,5 +135,67 @@
   i {
     font-size: 35px;
     color: $button-color;
+  }
+  .card{
+    border: none;
+    cursor: pointer;
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+    .img-box{
+      max-width: 435px;
+      max-height: 290px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      .bg-img{
+        background: linear-gradient(180deg, rgba(0,0,0,0) 52.17%, #000000 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .info{
+          position: absolute;
+          bottom: 20px;
+          .member{
+            font-size: 14px;
+            font-weight: map-get($font-weights, medium);
+            color: white;
+          }
+          .rate {
+            i {
+              font-size: 24px;
+              color: orange;
+            }
+          }
+        }
+      }
+    }
+    .caption{
+      .title{
+        font-size: 20px;
+        font-weight: map-get($font-weights, medium);
+      }
+
+      .price{
+        color: $button-color;
+        font-size: 25px;
+        font-weight: map-get($font-weights, bold);
+      }
+      a{
+        @include media-breakpoint-down(lg) {
+          padding: 5px 20px;
+        }
+        @include media-breakpoint-down(md) {
+          padding: 10px 50px;
+        }
+        @include media-breakpoint-down(sm) {
+          padding: 5px 20px;
+        }
+      }
+    }
   }
 }
