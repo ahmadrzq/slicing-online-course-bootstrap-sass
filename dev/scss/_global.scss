@@ -15,12 +15,15 @@
 
 .section {
   margin-top: 120px;
+  @include media-breakpoint-between(sm,lg) {
+    margin-top: 60px;
+  }
 }
 
 .label-section {
   font-weight: map-get($font-weights, medium);
   font-size: 25px;
-  color: $button-color
+  color: $button-color;
 }
 
 .heading-section {
@@ -36,10 +39,18 @@
 }
 
 // Home CSS
-#home {
+.home {
   background-color: $second-color;
   padding-top: 200px;
   height: 100vh;
+  overflow: inherit;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 100px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+  }
   .title {
     font-weight: map-get($font-weights, bold);
     font-size: 40px;
@@ -51,59 +62,68 @@
       color: $first-color;
     }
 
-    @include media-breakpoint-between(md,lg){
-        font-size: 35px !important;
+    @include media-breakpoint-between(sm, lg) {
+      font-size: 30px !important;
     }
-    @include media-breakpoint-down(sm){
-        font-size: 25px !important;
+    @include media-breakpoint-down(sm) {
+      font-size: 25px !important;
     }
   }
   .sub-title {
     font-weight: map-get($font-weights, light);
     font-size: 20px;
     color: $dark-color;
-    @include media-breakpoint-down(sm){
-        font-size: 16px;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
     }
   }
   .btn-home {
     margin-top: 80px;
-    @include media-breakpoint-down(lg){
-        margin-top: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
     }
   }
-  .img-home{
-    @include media-breakpoint-between(md,lg){
-        max-width: 400;
-        max-height: 600;
+  .img-home {
+    .img-img {
+      max-width: 100%;
+      height: auto;
+      @include media-breakpoint-between(sm,md) {
+        max-width: 70%;
+      }
+    }
+    @include media-breakpoint-between(sm, lg) {
+      max-width: 500px;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 400px;
     }
   }
 }
 
 // Category CSS
-.category{
-  i{
+.category {
+  i {
     font-size: 35px;
     color: $button-color;
   }
-  .trans{
+  .trans {
     transition: none;
   }
-  .card{
+  .card {
     border: 2px solid $button-color;
     color: $button-color;
     border-radius: 20px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       transform: scale(1.1);
       background-color: $button-color;
       color: $second-color;
     }
-    .detail{
-      .title{
+    .detail {
+      .title {
         font-size: 20px;
       }
-      .total{
+      .total {
         font-size: 15px;
       }
     }
@@ -111,8 +131,8 @@
 }
 
 // Product CSS
-.product{
-  i{
+.product {
+  i {
     font-size: 35px;
     color: $button-color;
   }
