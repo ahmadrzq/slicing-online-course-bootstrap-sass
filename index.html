@@ -1,288 +1,392 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/navbar/logo-small.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/images/navbar/logo-small.png" />
     <title>Smarter.in</title>
 
     <!-- ====Font Style===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- =====Bootstrap CSS===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
 
     <!-- =====Box Icons===== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
     <!-- =====Main CSS===== -->
-    <link rel="stylesheet" href="dist/css/main.css">
-</head>
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- =====Navbar Start===== -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <div class="logo">
-                    <a class="navbar-brand" href="#home">
-                        <img src="assets/images/navbar/logo-big.png" alt="" width="50"> Smarter.in
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto me-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Course</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Flash Sale</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                    </ul>
-                    <div class="navbar-auth text-center mt-4 mt-lg-0">
-                        <a class="btn-menu d-block d-lg-inline" href="">Masuk</a>
-                        <a class="btn-first ms-2 d-block d-lg-inline mt-3 mt-lg-0" href="">Daftar Sekarang</a>
-                    </div>
-                </div>
+      <!-- =====Navbar Start===== -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <div class="logo">
+            <a class="navbar-brand" href="#home">
+              <img src="assets/images/navbar/logo-big.png" alt="" width="50" />
+              Smarter.in
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-5">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Flash Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <div class="navbar-auth text-center mt-4 mt-lg-0">
+              <a class="btn-menu d-block d-lg-inline" href="">Masuk</a>
+              <a class="btn-first ms-2 d-block d-lg-inline mt-3 mt-lg-0" href=""
+                >Daftar Sekarang</a
+              >
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
-        <!-- =====Home Start===== -->
-        <section class="home" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1 class="title">Belajar Membutuhkan Platform Yang <span class="v1">Tepat</span>. Kembangkan
-                            <span class="v2">Skill</span> Dan Raih Cita-citamu Bersama Kami.
-                        </h1>
-                        <p class="sub-title">
-                            Meraih impian tidaklah mudah, anda harus disiplin dalam belajar.
-                        </p>
-                        <div class="btn-home text-center text-lg-start">
-                            <a class="btn-first d-block d-md-inline" href="">Mulai Belajar</a>
-                            <a class="btn-second ms-md-3 ms-lg-3 d-block d-md-inline mt-4 mt-lg-0" href="">Telusuri
-                                Lebih Jauh</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="img-home mt-2 mx-auto mt-lg-0 mx-lg-0 text-center text-lg-start">
-                            <img src="assets/images/home/hero-tr.png" class="img-img" alt="">
-                        </div>
-                    </div>
-                </div>
+      <!-- =====Home Start===== -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="title">
+                Belajar Membutuhkan Platform Yang <span class="v1">Tepat</span>.
+                Kembangkan <span class="v2">Skill</span> Dan Raih Cita-citamu
+                Bersama Kami.
+              </h1>
+              <p class="sub-title">
+                Meraih impian tidaklah mudah, anda harus disiplin dalam belajar.
+              </p>
+              <div class="btn-home text-center text-lg-start">
+                <a class="btn-first d-block d-md-inline" href=""
+                  >Mulai Belajar</a
+                >
+                <a
+                  class="btn-second ms-md-3 ms-lg-3 d-block d-md-inline mt-4 mt-lg-0"
+                  href=""
+                  >Telusuri Lebih Jauh</a
+                >
+              </div>
             </div>
-        </section>
+            <div class="col-lg-6">
+              <div
+                class="img-home mt-2 mx-auto mt-lg-0 mx-lg-0 text-center text-lg-start"
+              >
+                <img
+                  src="assets/images/home/hero-tr.png"
+                  class="img-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- =====Partnership Start===== -->
     <section class="partnership section">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h1 class="label-section">Our Partnership</h1>
-                </div>
-            </div>
-            <div class="row mt-4 justify-content-center align-items-center text-center">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-2 ">
-                    <img src="assets/images/partnership/telkom.png" width="150" alt="">
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0">
-                    <img src="assets/images/partnership/subway.png" width="150" alt="">
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0">
-                    <img src="assets/images/partnership/kementrian.png" width="150" alt="">
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0">
-                    <img src="assets/images/partnership/zendesk.png" width="150" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h1 class="label-section">Our Partnership</h1>
+          </div>
         </div>
+        <div
+          class="row mt-4 justify-content-center align-items-center text-center"
+        >
+          <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+            <img
+              src="assets/images/partnership/telkom.png"
+              width="150"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0">
+            <img
+              src="assets/images/partnership/subway.png"
+              width="150"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0">
+            <img
+              src="assets/images/partnership/kementrian.png"
+              width="150"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-4 mt-lg-0">
+            <img
+              src="assets/images/partnership/zendesk.png"
+              width="150"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- =====Category Start===== -->
     <section class="category section">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6 d-flex justify-content-start align-items-center">
-                    <i class='bx bxs-check-square'></i>
-                    <h1 class="label-section m-0">Kategori Populer</h1>
-                </div>
-                <div class="col-md-6 text-md-end mt-4 mt-md-0 mt-lg-0">
-                    <a class="btn-first" href="">Lainnya</a>
-                </div>
-            </div>
-            <div class="row row-card mt-4 align-content-center">
-                <div class="col-md-6 col-lg-3 mt-3">
-                    <div class="card py-3">
-                        <div class="card-body d-flex justify-content-center align-items-center trans">
-                            <img src="assets/images/category/ui-ux.png" alt="" width="70">
-                            <div class="detail ms-2 trans justify-content-center">
-                                <h3 class="title m-0 trans">UI/UX Design</h3>
-                                <h5 class="total m-0 trans">10 Kelas</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mt-3">
-                    <div class="card py-3">
-                        <div class="card-body d-flex justify-content-center align-items-center trans">
-                            <img src="assets/images/category/front-end.png" alt="" width="70">
-                            <div class="detail ms-2 trans justify-content-center">
-                                <h3 class="title m-0 trans">Front End</h3>
-                                <h5 class="total m-0 trans">10 Kelas</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mt-3">
-                    <div class="card py-3">
-                        <div class="card-body d-flex justify-content-center align-items-center trans">
-                            <img src="assets/images/category/back-end.png" alt="" width="70">
-                            <div class="detail ms-2 trans justify-content-center">
-                                <h3 class="title m-0 trans">Back End</h3>
-                                <h5 class="total m-0 trans">10 Kelas</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mt-3">
-                    <div class="card py-3">
-                        <div class="card-body d-flex justify-content-center align-items-center trans">
-                            <img src="assets/images/category/security.png" alt="" width="70">
-                            <div class="detail ms-2 trans">
-                                <h3 class="title m-0 trans">Security</h3>
-                                <h5 class="total m-0 trans">10 Kelas</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 d-flex justify-content-start align-items-center">
+            <i class="bx bxs-check-square"></i>
+            <h1 class="label-section m-0">Kategori Populer</h1>
+          </div>
+          <div class="col-md-6 text-md-end mt-4 mt-md-0 mt-lg-0">
+            <a class="btn-first" href="">Lainnya</a>
+          </div>
         </div>
+        <div class="row row-card mt-4 align-content-center">
+          <div class="col-md-6 col-lg-3 mt-3">
+            <div class="card py-3">
+              <div
+                class="card-body d-flex justify-content-center align-items-center trans"
+              >
+                <img src="assets/images/category/ui-ux.png" alt="" width="70" />
+                <div class="detail ms-2 trans justify-content-center">
+                  <h3 class="title m-0 trans">UI/UX Design</h3>
+                  <h5 class="total m-0 trans">10 Kelas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <div class="card py-3">
+              <div
+                class="card-body d-flex justify-content-center align-items-center trans"
+              >
+                <img
+                  src="assets/images/category/front-end.png"
+                  alt=""
+                  width="70"
+                />
+                <div class="detail ms-2 trans justify-content-center">
+                  <h3 class="title m-0 trans">Front End</h3>
+                  <h5 class="total m-0 trans">10 Kelas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <div class="card py-3">
+              <div
+                class="card-body d-flex justify-content-center align-items-center trans"
+              >
+                <img
+                  src="assets/images/category/back-end.png"
+                  alt=""
+                  width="70"
+                />
+                <div class="detail ms-2 trans justify-content-center">
+                  <h3 class="title m-0 trans">Back End</h3>
+                  <h5 class="total m-0 trans">10 Kelas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <div class="card py-3">
+              <div
+                class="card-body d-flex justify-content-center align-items-center trans"
+              >
+                <img
+                  src="assets/images/category/security.png"
+                  alt=""
+                  width="70"
+                />
+                <div class="detail ms-2 trans">
+                  <h3 class="title m-0 trans">Security</h3>
+                  <h5 class="total m-0 trans">10 Kelas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- =====Product Start===== -->
     <section class="product section">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6 d-flex justify-content-start align-items-center">
-                    <i class='bx bxs-check-square'></i>
-                    <h1 class="label-section m-0">Pelatihan Populer Kami</h1>
-                </div>
-                <div class="col-md-6 text-md-end mt-4 mt-md-0 mt-lg-0">
-                    <a class="btn-first" href="">Kelas Lainnya</a>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="img-box">
-                            <img src="assets/images/product/front-end.jpg" class="img-fluid" alt="">
-                            <div class="bg-img px-4">
-                                <div class="info">
-                                    <p class="member m-0">1230 orang telah mendaftar</p>
-                                    <div class="rate">
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption mt-4">
-                            <h3 class="title">Belajar Front End Web Development</h3>
-                            <a href="" class="badge bg-warning">Front End</a>
-                            <div class="caption-button mt-5 d-flex justify-content-between align-items-center">
-                                <h5 class="price m-0">RP 500,000</h5>
-                                <a href="" class="btn-first">Lihat Kelas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
-                    <div class="card">
-                        <div class="img-box">
-                            <img src="assets/images/product/back-end.jpg" class="img-fluid" alt="">
-                            <div class="bg-img px-4">
-                                <div class="info">
-                                    <p class="member m-0">750 orang telah mendaftar</p>
-                                    <div class="rate">
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption mt-4">
-                            <h3 class="title">Belajar Back End Development</h3>
-                            <a href="" class="badge bg-dark">Back End</a>
-                            <div class="caption-button mt-5 d-flex justify-content-between align-items-center">
-                                <h5 class="price m-0">RP 500,000</h5>
-                                <a href="" class="btn-first">Lihat Kelas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                    <div class="card">
-                        <div class="img-box">
-                            <img src="assets/images/product/security.jpg" class="img-fluid" alt="">
-                            <div class="bg-img px-4">
-                                <div class="info">
-                                    <p class="member m-0">270 orang telah mendaftar</p>
-                                    <div class="rate">
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption mt-4">
-                            <h3 class="title">Belajar Security Untuk Aplikasi Website</h3>
-                            <a href="" class="badge bg-danger">Security</a>
-                            <div class="caption-button mt-5 d-flex justify-content-between align-items-center">
-                                <h5 class="price m-0">RP 350,000</h5>
-                                <a href="" class="btn-first">Lihat Kelas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 d-flex justify-content-start align-items-center">
+            <i class="bx bxs-check-square"></i>
+            <h1 class="label-section m-0">Pelatihan Populer Kami</h1>
+          </div>
+          <div class="col-md-6 text-md-end mt-4 mt-md-0 mt-lg-0">
+            <a class="btn-first" href="">Kelas Lainnya</a>
+          </div>
         </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="img-box">
+                <img
+                  src="assets/images/product/front-end.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="bg-img px-4">
+                  <div class="info">
+                    <p class="member m-0">1230 orang telah mendaftar</p>
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="caption mt-4">
+                <h3 class="title">Belajar Front End Web Development</h3>
+                <a href="" class="badge bg-warning">Front End</a>
+                <div
+                  class="caption-button mt-5 d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="price m-0">RP 500,000</h5>
+                  <a href="" class="btn-first">Lihat Kelas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <div class="card">
+              <div class="img-box">
+                <img
+                  src="assets/images/product/back-end.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="bg-img px-4">
+                  <div class="info">
+                    <p class="member m-0">750 orang telah mendaftar</p>
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="caption mt-4">
+                <h3 class="title">Belajar Back End Development</h3>
+                <a href="" class="badge bg-dark">Back End</a>
+                <div
+                  class="caption-button mt-5 d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="price m-0">RP 500,000</h5>
+                  <a href="" class="btn-first">Lihat Kelas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="card">
+              <div class="img-box">
+                <img
+                  src="assets/images/product/security.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="bg-img px-4">
+                  <div class="info">
+                    <p class="member m-0">270 orang telah mendaftar</p>
+                    <div class="rate">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="caption mt-4">
+                <h3 class="title">Belajar Security Untuk Aplikasi Website</h3>
+                <a href="" class="badge bg-danger">Security</a>
+                <div
+                  class="caption-button mt-5 d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="price m-0">RP 350,000</h5>
+                  <a href="" class="btn-first">Lihat Kelas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====About Start===== -->
+    <section class="about section">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6">
+            <img src="assets/images/home/hero-tr.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-5 mt-5 mt-sm-0">
+            <h1 class="heading-section">
+              Platform Pelatihan Online Terbaik Kini Telah Hadir
+            </h1>
+            <p class="sub-heading-section">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+              illo quod possimus distinctio et error eos dolor reiciendis sequi
+              id?
+            </p>
+            <p class="sub-heading-section">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+              illo quod possimus distinctio et error eos dolor reiciendis sequi
+              id?
+            </p>
+            <a href="#" class="btn-first mt-5 d-inline-block">
+                Baca Selengkapnya
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- =====Jquery===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <script src="dist/script/jquery-3.6.4.min.js"></script>
+    <script src="dist/script/bootstrap.bundle.min.js"></script>
     <script src="dist/script/main.js"></script>
-</body>
-
+  </body>
 </html>

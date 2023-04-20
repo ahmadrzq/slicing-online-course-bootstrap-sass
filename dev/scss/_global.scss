@@ -4,7 +4,7 @@
 @import "button";
 
 * {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   list-style: none !important;
   text-decoration: none !important;
   transition: 0.3s ease-in-out all;
@@ -30,12 +30,19 @@
   font-weight: map-get($font-weights, medium);
   font-size: 40px;
   color: $dark-color;
+
+  @include media-breakpoint-down(md) {
+    font-size: 30px;
+  }
 }
 
 .sub-heading-section {
   font-weight: map-get($font-weights, light);
   font-size: 18px;
   color: $dark-color;
+  @include media-breakpoint-down(md) {
+    font-size: 16x;
+  }
 }
 
 // Home CSS
